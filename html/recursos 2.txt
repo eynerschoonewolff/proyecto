@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="col-xl-12 col-lg-12 col-sm-12 col-lg-12 col-xs-12 col-12 my-5 p-2 row d-flex justify-content-center">
+        <div class="my-2 p-3" style="max-width: 50rem;">
+            <div class="card-header" style="background-color:#f0d9ff;">
+                <div class="card-body text-dark">
+                    <form class="row g-3 needs-validation my-3 mx-5" id="formularioRegistro" novalidate>
+
+                        <div class="col-md-4">
+                            <label for="nombres" class="form-label">Nombre(s)</label>
+                            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Your name" required>
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <label for="Apellidos" class="form-label">Apellido(s)</label>
+                            <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="Conrado" required>
+                            <div class="valid-feedback">
+                            Looks good!
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <label for="Usuario" class="form-label">Nickname</label>
+                            <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="inputGroupPrepend"
+                                required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <label for="Correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="Correo" name="Correo" required>
+                            <div class="invalid-feedback">
+                            Please provide a valid city.
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3">
+                            <label for="Contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
+                            <div class="invalid-feedback">
+                            Please provide a valid zip.
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-3">
+                            <label for="tipo" class="form-label">Tipo de registro</label>
+                            <select class="form-select" id="tipo" required>
+                            <option selected disabled value="">No Anonimo</option>
+                            <option>Anonimo</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            Please select a valid state.
+                            </div>
+                        </div>
+                    
+                        <div class="col-12">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Acepto la politica de privacidad
+                            </label>
+                            <div class="invalid-feedback">
+                                Debe aceptar los términos y condiciones de privacidad antes de enviar.
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-3"> <!--Botones-->                      
+                            <div class="col-lg-2">
+                                <button class="btn btn-primary" type="submit">registrate</button>
+                            </div>                                
+                        </div>
+                    </form>                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive" >
+        <table class="table table-hover table-border table-dark table-sm" id="tabla">
+            <thead class="text-secondary">
+                <tr >
+                    <th >Nombre</th>
+                    <th>Apellido</th>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Correo electronico</th>
+                    <th >Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+</html>
+<script src="../registro_usuario.js"></script>
+
+
+    <div class="col-lg-12 text-center bg-light">
+        <img src="../img/cabezera.png" class="img-fluid w-25">
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <div class="container-fluid">
+            <img src="../img/logo_colegio.png" alt="" class="col-sm-2 col-lg-2 col-3 navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="registro.html">Registro</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <form class="d-flex">
+                <a class="btn btn-outline-primary" href="login.html" role="button">Iniciar sesión</a>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-xl-10 col-lg-10 col-sm-12 col-lg-12 my-auto px-5 p-3">
+            <h1 class="display-4">Síntomas de que estás sufriendo maltrato psicológico</h1>
+        </div>
+
+        <div class="row g-0">
+            <div class="col-xl-8 col-lg-8 col-sm-8 col-lg-8 my-auto px-5 p-3">
+                <img src="../img/blog-02.png" class="img-fluid rounded-start" alt="...">
+            </div>
+
+            <div class="col-xl-8 col-lg-8 col-sm-8 col-lg-8 my-auto px-5 p-3">
+                <p>
+                    El maltrato psicológico es una forma de agresión donde una persona ejerce un poder sobre otra, con
+                    comportamientos físicos o verbales de forma reiterada que atentan contra la estabilidad emocional.
+                    La
+                    víctima sufre intimidación, culpa y baja autoestima, sin lograr salir de la situación donde se
+                    siente
+                    prisionera.
+                </p>
+            </div>
+
+            <div class="row m-4">
+                <div class="offset-lg-4 col-lg-8">
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#elemento" role="tab">Síntomas de
+                                maltrato
+                                psicológico </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#elemento2" role="tab">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#elemento3" role="tab">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content mt-2">
+
+
+                <div class="tab-pane active" id="elemento role=" tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                            <img src="../img/istockphoto-1306836428-612x612.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 mb-md-5">
+                            <h4 class="lead">
+                                Síntomas de maltrato psicológico
+                            </h4>
+                            <p>Mantener una situación de maltrato psicológico siempre tiene consecuencias directas para
+                                quien lo sufre. No son situaciones que se reparen con el tiempo, ni solas ni con nuestra
+                                ayuda. Acaban apareciendo enfermedades físicas y sintomatología mental que deterioran
+                                seriamente la salud.</p>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-success">1. Sus necesidades van siempre antes
+                                    que las tuyas
+                                </li>
+                                <li class="list-group-item list-group-item-info">2. Te hace sentir que no eres válido ni
+                                    capaz</li>
+                                <li class="list-group-item list-group-item-warning">3. Rompe toda estabilidad en tu vida
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="elemento2" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                            <img src="../img/123160080-ilustración-de-dibujos-animados-de-vector-de-personas-hombre-agresivo-gritándole-a-la-mujer-marido-e.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 mb-md-5">
+                            <h4 class="lead">
+                                Síntomas de maltrato psicológico2
+                            </h4>
+                            <p>Mantener una situación de maltrato psicológico siempre tiene consecuencias directas para
+                                quien lo sufre. No son situaciones que se reparen con el tiempo, ni solas ni con nuestra
+                                ayuda. Acaban apareciendo enfermedades físicas y sintomatología mental que deterioran
+                                seriamente la salud2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="elemento3" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 mb-md-3 mb-lg-0">
+                            <img src="../img/maltrato-pscicologicp.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 mb-md-5">
+                            <h4 class="lead">
+                                Síntomas de maltrato psicológico3
+                            </h4>
+                            <p>Mantener una situación de maltrato psicológico siempre tiene consecuencias directas para
+                                quien lo sufre. No son situaciones que se reparen con el tiempo, ni solas ni con nuestra
+                                ayuda. Acaban apareciendo enfermedades físicas y sintomatología mental que deterioran
+                                seriamente la salud3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

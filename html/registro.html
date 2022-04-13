@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="col-lg-12 text-center bg-light">
+      <img src="../img/cabezera.png" class="img-fluid w-25">
+    </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+    <div class="container-fluid">
+      <img src="../img/logo_colegio.png" alt="" class="col-sm-2 col-lg-2 col-3 navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="registro.html">Registro</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row mt-3">
+      <div class="col-lg-12 text-center px-5">
+        <p class="fs-3">Registro</p>
+        <p class="px-5">Bienvenido al formulario de registro, comunicate con notros a travez de la pestaña de sopor te o
+          escribiendo al correo example.@gmail.com</p>
+      </div>
+    </div>
+
+
+
+    <form class="row g-3 needs-validation mt-3 mx-5" id="formularioRegistro" novalidate>
+
+      <div class="col-md-4">
+        <label for="nombres" class="form-label">Nombre(s)</label>
+        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Your name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="Apellidos" class="form-label">Apellido(s)</label>
+        <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="Conrado" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="Usuario" class="form-label">Nickname</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="Usuario" name="Usuario" aria-describedby="inputGroupPrepend"
+            required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="Correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="Correo" name="Correo" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="Contraseña" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="tipo" class="form-label">Tipo de registro</label>
+        <select class="form-select" id="tipo" required>
+          <option>No Anonimo</option>
+          <option>Anonimo</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto la politica de privacidad
+          </label>
+          <div class="invalid-feedback">
+            Debe aceptar los términos y condiciones de privacidad antes de enviar.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Registrate</button>
+      </div>      
+    </form>
+
+    <div class="row "></div>
+      <div class="col-12 mx-5">
+        <button class="btn btn-warning mt-3" onclick="clearForm()">Limpiar Datos</button>
+      </div>
+    <div>
+
+    <div class="row mx-5">
+      <div class="table-responsive col-lg-12 text-center">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Usuario</th>
+              <th scope="col">Contraseña</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody id="tabla">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+<script src="../registro_usuario.js"></script>
