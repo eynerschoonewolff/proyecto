@@ -1,0 +1,25 @@
+<tbody>
+    <form action="/actualizar" method="post">
+        <input type="hidden" name="id" value="{{usuario['id']}}">
+        <tr>
+            <td>
+                <input style="width: 150px;" type="text" name="nombres" value="{{usuario['nombres']}}">
+            </td>
+            <td>
+                <input t style="width: 150px;"ype="text" name="apellidos" value="{{usuario['apellidos']}}">
+            </td>
+            <td>
+                <input  style="width: 150px;"type="text" name="nickname" value="{{usuario['nickname']}}">
+            </td>
+            <td>
+                <input ty style="width: 150px;"pe="text" name="contraseña" value="{{usuario['contraseña']}}">
+            </td>
+            <td>
+                <input style="width: 150px;"t type="text" name="correo" value="{{usuario['correo']}}">
+            </td>
+            <td>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+            </td>
+        </tr>
+    </form>
+</tbody>

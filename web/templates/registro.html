@@ -49,8 +49,7 @@
 
 
 
-    <form class="row g-3 needs-validation mt-3 mx-5" id="formularioRegistro" novalidate>
-
+    <form class="row g-3 needs-validation mt-3 mx-5" method="post" action="/registrar">
       <div class="col-md-4">
         <label for="nombres" class="form-label">Nombre(s)</label>
         <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Your name" required>
@@ -120,12 +119,12 @@
 
       <div class="col-12">
         <button class="btn btn-primary" type="submit">Registrate</button>
-      </div>      
+      </div>
     </form>
 
     <div class="row "></div>
       <div class="col-12 mx-5">
-        <button class="btn btn-warning mt-3" onclick="clearForm()">Limpiar Datos</button>
+        <button class="btn btn-warning mt-3">Limpiar Datos</button>
       </div>
     <div>
 
@@ -139,19 +138,18 @@
               <th scope="col">Usuario</th>
               <th scope="col">Contraseña</th>
               <th scope="col">Correo</th>
-              <th scope="col">Editar</th>
-              <th scope="col">Eliminar</th>
+              <th scope="col">Acciones</th>
             </tr>
           </thead>
-          <tbody id="tabla">
-
-          </tbody>
+          {% if listar_usuarios %}
+            {% include 'tabla_listar_usuarios.html' %}
+          {% elif actualizar_usuario %}
+            {% include 'tabla_actualizar_usuarios.html' %}
+          {% endif %}
         </table>
       </div>
     </div>
 
   </div>
 </body>
-
 </html>
-<script src="../registro_usuario.js"></script>
